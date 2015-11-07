@@ -50,7 +50,7 @@
     if (_isNumerical(string)) {
       return string;
     }
-    string = string.replace(/[\-_\s]+(.)?/g, function(match, chr) {
+    string = string.replace(/[\_\s]+(.)?/g, function(match, chr) {
       return chr ? chr.toUpperCase() : '';
     });
     // Ensure 1st char is always lowercase
